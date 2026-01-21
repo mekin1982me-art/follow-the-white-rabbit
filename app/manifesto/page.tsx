@@ -117,8 +117,7 @@ export default function ManifestoPage() {
             textShadow: "0 0 18px rgba(180,0,255,0.35)",
           }}
         >
-          Follow the . White Rabbit <br />
-          Yakında Takip Başlıyor Pek Yakında :))
+          follow the . white rabbit
         </p>
       </div>
     </main>
