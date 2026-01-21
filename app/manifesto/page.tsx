@@ -4,7 +4,7 @@ export default function ManifestoPage() {
       style={{
         minHeight: "100vh",
         background: "#2b2b2b", // koyu füme
-        color: "#fafafa", // beyaz
+        color: "#ffffff", // beyaz
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -76,13 +76,13 @@ export default function ManifestoPage() {
           }}
         >
           <p style={{ margin: 0 }}>
-            Biz, gösterişe değil <strong style={{ color: "#fafafa" }}>iz</strong>e inanırız.
-            Gürültü değil, <strong style={{ color: "#fafafa" }}>yankı</strong> bırakırız.
+            Biz, gösterişe değil <strong style={{ color: "#ffffff" }}>iz</strong>e inanırız.
+            Gürültü değil, <strong style={{ color: "#ffffff" }}>yankı</strong> bırakırız.
           </p>
 
           <p style={{ margin: 0 }}>
             Burada kimseyi ikna etmiyoruz. <br />
-            Sadece doğru yerde duranları <strong style={{ color: "#fafafa }}>ayırt</strong> ediyoruz.
+            Sadece doğru yerde duranları <strong style={{ color: "#ffffff" }}>ayırt</strong> ediyoruz.
           </p>
 
           <p style={{ margin: 0 }}>
@@ -92,12 +92,12 @@ export default function ManifestoPage() {
 
           <p style={{ margin: 0 }}>
             Bu bir kulüp değil. Bir “trend” hiç değil. <br />
-            Bu, kendini hatırlayanların <strong style={{ color: "#fafafa" }}>işareti</strong>.
+            Bu, kendini hatırlayanların <strong style={{ color: "#ffffff" }}>işareti</strong>.
           </p>
 
           <p style={{ margin: 0 }}>
             Eğer buradaysan, bir şey seni çağırdı demektir. <br />
-            O çağrıya kulak verenler, eninde sonunda <strong style={{ color: "#fafafa" }}>aynı masaya</strong> oturur.
+            O çağrıya kulak verenler, eninde sonunda <strong style={{ color: "#ffffff" }}>aynı masaya</strong> oturur.
           </p>
         </div>
 
