@@ -4,7 +4,7 @@ export default function ManifestoPage() {
       style={{
         minHeight: "100vh",
         background: "#2b2b2b", // koyu füme
-        color: "#b400ff", // neon mor
+        color: "#ff8c00", // turuncu
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -39,7 +39,7 @@ export default function ManifestoPage() {
         <h1
           style={{
             margin: "0 0 14px 0",
-            fontSize: "42px",
+            fontSize: "52px",
             lineHeight: 1.15,
             fontWeight: 700,
             textShadow: "0 0 18px rgba(180,0,255,0.35)",
@@ -51,7 +51,7 @@ export default function ManifestoPage() {
         <p
           style={{
             margin: "0 0 26px 0",
-            fontSize: "16px",
+            fontSize: "22px",
             lineHeight: 1.9,
             opacity: 0.95,
           }}
@@ -76,13 +76,13 @@ export default function ManifestoPage() {
           }}
         >
           <p style={{ margin: 0 }}>
-            Biz, gösterişe değil <strong style={{ color: "#d46bff" }}>iz</strong>e inanırız.
-            Gürültü değil, <strong style={{ color: "#d46bff" }}>yankı</strong> bırakırız.
+            Biz, gösterişe değil <strong style={{ color: "#ff8c00" }}>iz</strong>e inanırız.
+            Gürültü değil, <strong style={{ color: "#ff8c00" }}>yankı</strong> bırakırız.
           </p>
 
           <p style={{ margin: 0 }}>
             Burada kimseyi ikna etmiyoruz. <br />
-            Sadece doğru yerde duranları <strong style={{ color: "#d46bff" }}>ayırt</strong> ediyoruz.
+            Sadece doğru yerde duranları <strong style={{ color: "#ff8c00" }}>ayırt</strong> ediyoruz.
           </p>
 
           <p style={{ margin: 0 }}>
@@ -92,12 +92,12 @@ export default function ManifestoPage() {
 
           <p style={{ margin: 0 }}>
             Bu bir kulüp değil. Bir “trend” hiç değil. <br />
-            Bu, kendini hatırlayanların <strong style={{ color: "#d46bff" }}>işareti</strong>.
+            Bu, kendini hatırlayanların <strong style={{ color: "#ff8c00" }}>işareti</strong>.
           </p>
 
           <p style={{ margin: 0 }}>
             Eğer buradaysan, bir şey seni çağırdı demektir. <br />
-            O çağrıya kulak verenler, eninde sonunda <strong style={{ color: "#d46bff" }}>aynı masaya</strong> oturur.
+            O çağrıya kulak verenler, eninde sonunda <strong style={{ color: "#ff8c00" }}>aynı masaya</strong> oturur.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function ManifestoPage() {
             textShadow: "0 0 18px rgba(180,0,255,0.35)",
           }}
         >
-          Yakında görüşeceğiz.
+          Yakında görüşeceğiz,Seni takipteyim.
         </p>
       </div>
     </main>
