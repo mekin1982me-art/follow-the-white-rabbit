@@ -3,65 +3,47 @@ export default function ManifestoPage() {
     <main
       style={{
         minHeight: "100vh",
-        backgroundColor: "#f7f7f7",
+        background: "#f5f5f5",
+        color: "#111",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "48px 20px",
+        padding: "48px 24px",
         fontFamily:
-          '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+          'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
       }}
     >
       <div
         style={{
           width: "min(820px, 100%)",
-          backgroundColor: "#ffffff",
-          border: "1px solid #e6e6e6",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+          background: "#fff",
+          border: "1px solid rgba(0,0,0,0.12)",
           borderRadius: "16px",
-          padding: "40px",
-          color: "#111",
-          lineHeight: 1.7,
+          padding: "42px",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
+          lineHeight: 1.8,
         }}
       >
-        <div style={{ marginBottom: "18px", opacity: 0.7, letterSpacing: "0.18em", fontSize: 12 }}>
+        <div style={{ letterSpacing: "0.18em", fontSize: 12, opacity: 0.65 }}>
           MANIFESTO
         </div>
 
-        <h1 style={{ margin: 0, fontSize: 34, letterSpacing: "-0.02em" }}>
+        <h1 style={{ marginTop: 14, marginBottom: 18, fontSize: 34 }}>
           Follow the White Rabbit
         </h1>
 
-        <p style={{ marginTop: 14, color: "#333" }}>
-          Not everyone will understand. That’s the point.
+        <p style={{ margin: 0, fontSize: 18, opacity: 0.9 }}>
+          Not everyone will understand.
+          <br />
+          That’s the point.
         </p>
 
-        <hr style={{ border: "none", borderTop: "1px solid #eee", margin: "28px 0" }} />
+        <hr style={{ margin: "28px 0", border: "none", borderTop: "1px solid rgba(0,0,0,0.12)" }} />
 
-        <p style={{ margin: 0, color: "#222" }}>
-          1) Observe carefully.<br />
-          2) Question the obvious.<br />
-          3) Move quietly, with intent.<br />
-          4) Build what you wish existed.<br />
-          5) Leave a trace worth following.
+        <p style={{ margin: 0, fontSize: 16 }}>
+          Buraya yarın gerçek manifesto metnini koyacağız.
+          Şimdilik çalıştığını göstermek için bu metin yeterli.
         </p>
-
-        <div style={{ marginTop: 34 }}>
-          <a
-            href="/"
-            style={{
-              display: "inline-block",
-              textDecoration: "none",
-              padding: "12px 18px",
-              borderRadius: "12px",
-              border: "1px solid #ddd",
-              color: "#111",
-              background: "#fafafa",
-            }}
-          >
-            ← Back
-          </a>
-        </div>
       </div>
     </main>
   );
