@@ -49,6 +49,7 @@ export default function Home() {
         </p>
 
         <button
+          onClick={() => window.location.href = "/manifesto"}          
           style={{
             backgroundColor: "transparent",
             border: "1px solid rgba(255,255,255,0.4)",
