@@ -3,67 +3,122 @@ export default function ManifestoPage() {
     <main
       style={{
         minHeight: "100vh",
-        background: "#f5f5f5",
-        color: "#111",
+        background: "#2b2b2b", // koyu füme
+        color: "#b400ff", // neon mor
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "48px 24px",
+        padding: "48px 20px",
         fontFamily:
-          'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+          'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"',
       }}
     >
       <div
         style={{
-          width: "min(820px, 100%)",
-          background: "#fff",
-          border: "1px solid rgba(0,0,0,0.12)",
-          borderRadius: "16px",
-          padding: "42px",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
-          lineHeight: 1.8,
+          width: "min(900px, 100%)",
+          border: "1px solid rgba(180,0,255,0.35)",
+          borderRadius: "18px",
+          padding: "36px 28px",
+          background:
+            "linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))",
+          boxShadow: "0 20px 70px rgba(0,0,0,0.55)",
         }}
       >
-        <div style={{ marginBottom: "18px" }}>
-          <div style={{ fontSize: "12px", letterSpacing: "0.22em", opacity: 0.65 }}>
-            MANIFESTO
-          </div>
-          <h1 style={{ margin: "8px 0 0", fontSize: "34px", letterSpacing: "-0.02em" }}>
-            Follow the White Rabbit
-          </h1>
-        </div>
-
-        <p style={{ margin: "18px 0" }}>
-          Not everyone will understand. <br />
-          That&apos;s the point.
-        </p>
-
-        <p style={{ margin: "18px 0" }}>
-          We move quietly. We build carefully. We don&apos;t ask for permission.
-          We choose clarity over noise, craft over hype, and truth over comfort.
-        </p>
-
-        <p style={{ margin: "18px 0" }}>
-          If you&apos;re here, you already felt it: <strong>there is more</strong>.
-          Keep going.
-        </p>
-
-        <a
-          href="/"
+        <p
           style={{
-            display: "inline-block",
-            marginTop: "22px",
-            padding: "12px 18px",
-            borderRadius: "12px",
-            border: "1px solid rgba(0,0,0,0.18)",
-            textDecoration: "none",
-            color: "#111",
-            fontFamily: "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
-            fontSize: "14px",
+            letterSpacing: "0.42em",
+            fontSize: "12px",
+            opacity: 0.85,
+            margin: "0 0 18px 0",
+            textTransform: "uppercase",
           }}
         >
-          ← Back
-        </a>
+          BİR FISILTI, BİR ÇIĞLIK DEĞİL
+        </p>
+
+        <h1
+          style={{
+            margin: "0 0 14px 0",
+            fontSize: "42px",
+            lineHeight: 1.15,
+            fontWeight: 700,
+            textShadow: "0 0 18px rgba(180,0,255,0.35)",
+          }}
+        >
+          Manifesto
+        </h1>
+
+        <p
+          style={{
+            margin: "0 0 26px 0",
+            fontSize: "16px",
+            lineHeight: 1.9,
+            opacity: 0.95,
+          }}
+        >
+          Herkes anlamayacak. <br />
+          Zaten mesele bu.
+        </p>
+
+        <div
+          style={{
+            borderTop: "1px solid rgba(180,0,255,0.25)",
+            margin: "18px 0 24px 0",
+          }}
+        />
+
+        <div
+          style={{
+            display: "grid",
+            gap: "16px",
+            fontSize: "16px",
+            lineHeight: 1.95,
+          }}
+        >
+          <p style={{ margin: 0 }}>
+            Biz, gösterişe değil <strong style={{ color: "#d46bff" }}>iz</strong>e inanırız.
+            Gürültü değil, <strong style={{ color: "#d46bff" }}>yankı</strong> bırakırız.
+          </p>
+
+          <p style={{ margin: 0 }}>
+            Burada kimseyi ikna etmiyoruz. <br />
+            Sadece doğru yerde duranları <strong style={{ color: "#d46bff" }}>ayırt</strong> ediyoruz.
+          </p>
+
+          <p style={{ margin: 0 }}>
+            Hızlı tüketilen hiçbir şey bizi ilgilendirmez. <br />
+            Biz, sabırla kurulanı; sessizce büyüyeni seçeriz.
+          </p>
+
+          <p style={{ margin: 0 }}>
+            Bu bir kulüp değil. Bir “trend” hiç değil. <br />
+            Bu, kendini hatırlayanların <strong style={{ color: "#d46bff" }}>işareti</strong>.
+          </p>
+
+          <p style={{ margin: 0 }}>
+            Eğer buradaysan, bir şey seni çağırdı demektir. <br />
+            O çağrıya kulak verenler, eninde sonunda <strong style={{ color: "#d46bff" }}>aynı masaya</strong> oturur.
+          </p>
+        </div>
+
+        <div
+          style={{
+            borderTop: "1px solid rgba(180,0,255,0.25)",
+            margin: "28px 0 18px 0",
+          }}
+        />
+
+        <p
+          style={{
+            margin: 0,
+            fontSize: "18px",
+            fontWeight: 700,
+            textAlign: "right",
+            textShadow: "0 0 18px rgba(180,0,255,0.35)",
+          }}
+        >
+          Yakında görüşeceğiz.
+        </p>
       </div>
     </main>
   );
