@@ -111,13 +111,13 @@ export default function ManifestoPage() {
         <p
           style={{
             margin: 0,
-            fontSize: "18px",
+            fontSize: "24px",
             fontWeight: 700,
-            textAlign: "right",
+            textAlign: "left",
             textShadow: "0 0 18px rgba(180,0,255,0.35)",
           }}
         >
-          Yakında görüşeceğiz,Seni takipteyim.
+          Follow the . White Rabbit.
         </p>
       </div>
     </main>
