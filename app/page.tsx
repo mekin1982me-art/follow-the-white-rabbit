@@ -48,7 +48,7 @@ export default function Home() {
           That’s the point.
         </p>
 
-        <<a
+        <a
           href="/manifesto"
           style={{
            backgroundColor: "transparent",
