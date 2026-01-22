@@ -12,6 +12,18 @@ export default function Home() {
       }}
     >
       <div style={{ textAlign: "center", maxWidth: "700px" }}>
+        
+        {/* LOGO */}
+        <img
+          src="/logo-temp.png"
+          alt="Follow the White Rabbit logo"
+          style={{
+            width: "96px",
+            marginBottom: "56px",
+            opacity: 0.95,
+          }}
+        />
+
         <p
           style={{
             letterSpacing: "0.3em",
@@ -20,7 +32,7 @@ export default function Home() {
             marginBottom: "24px",
           }}
         >
-          A WHISPER, NOT A SHOUT
+          BİR FISILTI, BİR ÇIĞLIK DEĞİL
         </p>
 
         <h1
@@ -43,30 +55,29 @@ export default function Home() {
             marginBottom: "48px",
           }}
         >
-          Not everyone will understand.  
+          Herkes anlamayacak.
           <br />
-          That’s the point.
+          Zaten mesele bu.
         </p>
 
         <a
           href="/manifesto"
           style={{
-           backgroundColor: "transparent",
-           border: "1px solid rgba(255,255,255,0.4)",
-           color: "#ffffff",
-           padding: "14px 36px",
-           borderRadius: "40px",
-           cursor: "pointer",
-           fontSize: "14px",
-           letterSpacing: "0.15em",
-           display: "inline-block",
-          textDecoration: "none",
-          userSelect: "none",
-  }}
->
-  FOLLOW THE RABBIT
-</a>
-
+            backgroundColor: "transparent",
+            border: "1px solid rgba(255,255,255,0.4)",
+            color: "#ffffff",
+            padding: "14px 36px",
+            borderRadius: "40px",
+            cursor: "pointer",
+            fontSize: "14px",
+            letterSpacing: "0.15em",
+            display: "inline-block",
+            textDecoration: "none",
+            userSelect: "none",
+          }}
+        >
+          FOLLOW THE RABBIT
+        </a>
       </div>
     </main>
   );
