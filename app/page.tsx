@@ -1,4 +1,20 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+
 export default function Home() {
+  const router = useRouter();
+  const [leaving, setLeaving] = useState(false);
+
+  const goManifesto = () => {
+    if (leaving) return;
+    setLeaving(true);
+    setTimeout(() => {
+      router.push("/manifesto");
+    }, 520);
+  };
+
   return (
     <main
       style={{
@@ -9,6 +25,9 @@ export default function Home() {
         alignItems: "center",
         justifyContent: "center",
         fontFamily: "Helvetica, Arial, sans-serif",
+        opacity: leaving ? 0 : 1,
+        transform: leaving ? "scale(0.99)" : "scale(1)",
+        transition: "opacity 520ms ease, transform 520ms ease",
       }}
     >
       <div
@@ -76,9 +95,9 @@ export default function Home() {
           Zaten mesele bu.
         </p>
 
-        {/* BUTTON */}
-        <a
-          href="/manifesto"
+        {/* BUTTON (ritüel geçiş) */}
+        <button
+          onClick={goManifesto}
           style={{
             backgroundColor: "transparent",
             border: "1px solid rgba(255,255,255,0.35)",
@@ -88,13 +107,11 @@ export default function Home() {
             cursor: "pointer",
             fontSize: "14px",
             letterSpacing: "0.18em",
-            display: "inline-block",
-            textDecoration: "none",
             userSelect: "none",
           }}
         >
           FOLLOW THE RABBIT
-        </a>
+        </button>
       </div>
     </main>
   );
