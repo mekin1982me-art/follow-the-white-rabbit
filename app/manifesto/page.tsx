@@ -3,122 +3,214 @@ export default function ManifestoPage() {
     <main
       style={{
         minHeight: "100vh",
-        background: "#010101", // siyah
-        color: "#ffffff", // beyaz
+        backgroundColor: "#050505",
+        color: "#ffffff",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "48px 20px",
-        fontFamily:
-          'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"',
+        padding: "72px 20px",
+        fontFamily: "Helvetica, Arial, sans-serif",
       }}
     >
       <div
         style={{
-          width: "min(900px, 100%)",
-          border: "1px solid rgba(180,0,255,0.35)",
-          borderRadius: "18px",
-          padding: "36px 28px",
+          width: "min(880px, 100%)",
+          position: "relative",
+          border: "1px solid rgba(180,0,255,0.45)",
+          borderRadius: "24px",
+          padding: "56px 28px",
           background:
             "linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))",
-          boxShadow: "0 20px 70px rgba(0,0,0,0.55)",
+          boxShadow: "0 26px 100px rgba(0,0,0,0.7)",
+          overflow: "hidden",
+          textAlign: "center",
         }}
       >
+        {/* SUBTLE GRID */}
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            inset: 0,
+            pointerEvents: "none",
+            backgroundImage:
+              "linear-gradient(to right, rgba(180,0,255,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(180,0,255,0.06) 1px, transparent 1px)",
+            backgroundSize: "64px 64px",
+            opacity: 0.22,
+            maskImage:
+              "radial-gradient(60% 55% at 50% 35%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0) 78%)",
+            WebkitMaskImage:
+              "radial-gradient(60% 55% at 50% 35%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0) 78%)",
+          }}
+        />
+
+        {/* HOME LINK */}
+        <a
+          href="/"
+          style={{
+            position: "relative",
+            display: "inline-block",
+            marginBottom: "18px",
+            fontSize: "11px",
+            letterSpacing: "0.28em",
+            textDecoration: "none",
+            color: "rgba(255,255,255,0.6)",
+            textTransform: "uppercase",
+          }}
+        >
+          ← Home
+        </a>
+
+        {/* TAG */}
         <p
           style={{
-            letterSpacing: "0.42em",
+            position: "relative",
+            letterSpacing: "0.34em",
             fontSize: "12px",
-            opacity: 0.85,
-            margin: "0 0 18px 0",
+            opacity: 0.65,
+            margin: "10px 0 18px 0",
             textTransform: "uppercase",
           }}
         >
           BİR FISILTI, BİR ÇIĞLIK DEĞİL
         </p>
 
+        {/* TITLE */}
         <h1
           style={{
-            margin: "0 0 14px 0",
-            fontSize: "52px",
-            lineHeight: 1.15,
-            fontWeight: 700,
-            textShadow: "0 0 18px rgba(180,0,255,0.35)",
+            position: "relative",
+            margin: "0 0 26px 0",
+            fontSize: "46px",
+            fontWeight: 300,
+            lineHeight: 1.1,
           }}
         >
           Manifesto
         </h1>
 
-        <p
-          style={{
-            margin: "0 0 26px 0",
-            fontSize: "22px",
-            lineHeight: 1.9,
-            opacity: 0.95,
-          }}
-        >
-          Herkes anlamayacak. <br />
-          Zaten mesele bu.
-        </p>
-
+        {/* DIVIDER */}
         <div
           style={{
-            borderTop: "1px solid rgba(180,0,255,0.25)",
-            margin: "18px 0 24px 0",
+            position: "relative",
+            height: "1px",
+            width: "100%",
+            background:
+              "linear-gradient(90deg, transparent, rgba(180,0,255,0.45), transparent)",
+            margin: "22px 0 36px 0",
           }}
         />
 
+        {/* MANIFESTO */}
         <div
           style={{
-            display: "grid",
-            gap: "16px",
-            fontSize: "16px",
-            lineHeight: 1.95,
+            position: "relative",
+            maxWidth: "680px",
+            margin: "0 auto",
+            fontSize: "18px",
+            lineHeight: 1.9,
+            opacity: 0.94,
+            display: "flex",
+            flexDirection: "column",
+            gap: "22px",
           }}
         >
-          <p style={{ margin: 0 }}>
-            Biz, gösterişe değil <strong style={{ color: "#ffffff" }}>iz</strong>e inanırız.
-            Gürültü değil, <strong style={{ color: "#ffffff" }}>yankı</strong> bırakırız.
+          <p style={{ margin: 0, fontWeight: 600 }}>
+            “Herkes anlamayacak.
+            <br />
+            Zaten mesele bu.”
           </p>
 
           <p style={{ margin: 0 }}>
-            Burada kimseyi ikna etmiyoruz. <br />
-            Sadece doğru yerde duranları <strong style={{ color: "#ffffff" }}>ayırt</strong> ediyoruz.
+            “Biz gürültüyü seçmedik.
+            <br />
+            İz bırakmayı seçtik.”
           </p>
 
           <p style={{ margin: 0 }}>
-            Hızlı tüketilen hiçbir şey bizi ilgilendirmez. <br />
-            Biz, sabırla kurulanı; sessizce büyüyeni seçeriz.
+            “Burada kimse ikna edilmez.
+            <br />
+            Kimseye bir şey anlatılmaz.”
           </p>
 
           <p style={{ margin: 0 }}>
-            Bu bir kulüp değil. Bir “trend” hiç değil. <br />
-            Bu, kendini hatırlayanların <strong style={{ color: "#ffffff" }}>işareti</strong>.
+            “Bazı şeyler açıklanmaz.
+            <br />
+            Sadece fark edilir.”
           </p>
 
           <p style={{ margin: 0 }}>
-            Eğer buradaysan, bir şey seni çağırdı demektir. <br />
-            O çağrıya kulak verenler, eninde sonunda <strong style={{ color: "#ffffff" }}>aynı masaya</strong> oturur.
+            “Hızlı olan değil,
+            <br />
+            doğru olan kalır.”
+          </p>
+
+          <p style={{ margin: 0 }}>
+            “Bu bir topluluk değil.
+            <br />
+            Bir kulüp hiç değil.”
+          </p>
+
+          <p style={{ margin: 0 }}>
+            “Bu, hâlâ kendini duyabilenlerin
+            <br />
+            birbirini sessizce tanıma hâlidir.”
+          </p>
+
+          <p style={{ margin: 0 }}>
+            “Eğer buradaysan,
+            <br />
+            bir şey seni buraya getirdi.”
+          </p>
+
+          <p style={{ margin: 0 }}>“Biz ona tesadüf demiyoruz.”</p>
+
+          <p
+            style={{
+              marginTop: "10px",
+              fontWeight: 700,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+            }}
+          >
+            “ZAMANI GELDİĞİNDE,
+            <br />
+            NEYE BAKTIĞINI HATIRLAYACAKSIN.”
           </p>
         </div>
 
+        {/* DIVIDER */}
         <div
           style={{
-            borderTop: "1px solid rgba(180,0,255,0.25)",
-            margin: "28px 0 18px 0",
+            position: "relative",
+            height: "1px",
+            width: "100%",
+            background:
+              "linear-gradient(90deg, transparent, rgba(180,0,255,0.35), transparent)",
+            margin: "40px 0 18px 0",
           }}
         />
 
-        <p
+        {/* FOOTER */}
+        <div
           style={{
-            margin: 0,
-            fontSize: "24px",
-            fontWeight: 700,
-            textAlign: "left",
-            textShadow: "0 0 18px rgba(180,0,255,0.35)",
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "8px",
+            fontSize: "12px",
+            opacity: 0.55,
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
           }}
         >
-          follow the . white rabbit
-        </p>
+          <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+            <span>© 2026</span>
+            <span>®</span>
+            <span>Follow the White Rabbit</span>
+          </div>
+          <div>ANKARA</div>
+        </div>
       </div>
     </main>
   );
