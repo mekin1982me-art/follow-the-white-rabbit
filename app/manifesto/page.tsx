@@ -3,7 +3,7 @@ export default function ManifestoPage() {
     <main
       style={{
         minHeight: "100vh",
-        background: "#2b2b2b", // koyu füme
+        background: "#010101", // siyah
         color: "#ffffff", // beyaz
         display: "flex",
         alignItems: "center",
