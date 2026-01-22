@@ -44,21 +44,30 @@ export default function ManifestoPage() {
           }}
         />
 
-        {/* HOME LINK */}
+        {/* TOP-LEFT BACK ARROW */}
         <a
           href="/"
+          aria-label="Back"
           style={{
-            position: "relative",
-            display: "inline-block",
-            marginBottom: "18px",
-            fontSize: "11px",
-            letterSpacing: "0.28em",
+            position: "absolute",
+            top: "18px",
+            left: "18px",
+            width: "42px",
+            height: "42px",
+            borderRadius: "999px",
+            border: "1px solid rgba(255,255,255,0.35)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "rgba(255,255,255,0.92)",
             textDecoration: "none",
-            color: "rgba(255,255,255,0.6)",
-            textTransform: "uppercase",
+            fontSize: "18px",
+            lineHeight: 1,
+            background: "rgba(255,255,255,0.03)",
+            boxShadow: "0 0 22px rgba(180,0,255,0.25)",
           }}
         >
-          ← Home
+          ←
         </a>
 
         {/* TAG */}
@@ -68,7 +77,7 @@ export default function ManifestoPage() {
             letterSpacing: "0.34em",
             fontSize: "12px",
             opacity: 0.65,
-            margin: "10px 0 18px 0",
+            margin: "0 0 18px 0",
             textTransform: "uppercase",
           }}
         >
