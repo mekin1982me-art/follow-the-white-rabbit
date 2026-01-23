@@ -207,7 +207,7 @@ export default function ManifestoPage() {
             flexDirection: "column",
             alignItems: "center",
             gap: "8px",
-            fontSize: "12px",
+            fontSize: "8px",
             opacity: 0.55,
             letterSpacing: "0.18em",
             textTransform: "uppercase",
