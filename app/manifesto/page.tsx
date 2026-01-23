@@ -52,8 +52,8 @@ export default function ManifestoPage() {
             position: "absolute",
             top: "18px",
             left: "18px",
-            width: "42px",
-            height: "42px",
+            width: "30px",
+            height: "24px",
             borderRadius: "999px",
             border: "1px solid rgba(255,255,255,0.35)",
             display: "flex",
@@ -89,12 +89,12 @@ export default function ManifestoPage() {
           style={{
             position: "relative",
             margin: "0 0 26px 0",
-            fontSize: "46px",
+            fontSize: "40px",
             fontWeight: 300,
             lineHeight: 1.1,
           }}
         >
-          Manifesto
+          manifesto
         </h1>
 
         {/* DIVIDER */}
