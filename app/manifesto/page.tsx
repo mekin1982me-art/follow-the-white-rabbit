@@ -81,7 +81,7 @@ export default function ManifestoPage() {
             textTransform: "uppercase",
           }}
         >
-          BİR FISILTI, BİR ÇIĞLIK DEĞİL
+          bir fısıltı, bir çığlık değil
         </p>
 
         {/* TITLE */}
@@ -89,7 +89,7 @@ export default function ManifestoPage() {
           style={{
             position: "relative",
             margin: "0 0 26px 0",
-            fontSize: "40px",
+            fontSize: "36px",
             fontWeight: 300,
             lineHeight: 1.1,
           }}
@@ -124,54 +124,54 @@ export default function ManifestoPage() {
           }}
         >
           <p style={{ margin: 0, fontWeight: 600 }}>
-            “Herkes anlamayacak.
+            “herkes anlamayacak.
             <br />
-            Zaten mesele bu.”
+            zaten mesele bu.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Biz gürültüyü seçmedik.
+            “biz gürültüyü seçmedik.
             <br />
-            İz bırakmayı seçtik.”
+            iz bırakmayı seçtik.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Burada kimse ikna edilmez.
+            “burada kimse ikna edilmez.
             <br />
-            Kimseye bir şey anlatılmaz.”
+            kimseye bir şey anlatılmaz.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Bazı şeyler açıklanmaz.
+            “bazı şeyler açıklanmaz.
             <br />
-            Sadece fark edilir.”
+            sadece fark edilir.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Hızlı olan değil,
+            “hızlı olan değil,
             <br />
             doğru olan kalır.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Bu bir topluluk değil.
+            “bu bir topluluk değil.
             <br />
-            Bir kulüp hiç değil.”
+            bir kulüp hiç değil.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Bu, hâlâ kendini duyabilenlerin
+            “bu, hâlâ kendini duyabilenlerin
             <br />
             birbirini sessizce tanıma hâlidir.”
           </p>
 
           <p style={{ margin: 0 }}>
-            “Eğer buradaysan,
+            “eğer buradaysan,
             <br />
             bir şey seni buraya getirdi.”
           </p>
 
-          <p style={{ margin: 0 }}>“Biz ona tesadüf demiyoruz.”</p>
+          <p style={{ margin: 0 }}>“biz ona tesadüf demiyoruz.”</p>
 
           <p
             style={{
@@ -181,9 +181,9 @@ export default function ManifestoPage() {
               textTransform: "uppercase",
             }}
           >
-            “ZAMANI GELDİĞİNDE,
+            “zamanı geldiğinde,
             <br />
-            NEYE BAKTIĞINI HATIRLAYACAKSIN.”
+            neye baktığını hatırlayacaksın.”
           </p>
         </div>
 
