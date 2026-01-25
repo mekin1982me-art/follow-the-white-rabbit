@@ -14,7 +14,7 @@ export default function Home() {
     >
       <div style={{ textAlign: "center", maxWidth: "720px", width: "100%" }}>
         {/* LOGO */}
-        <div style={{ marginBottom: "26px" }}>
+        <div style={{ marginBottom: "16px" }}>
           <img
             src="/logo-tr-temp.png"
             alt="Follow the White Rabbit Logo"
