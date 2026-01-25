@@ -1,20 +1,4 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-
 export default function Home() {
-  const router = useRouter();
-  const [leaving, setLeaving] = useState(false);
-
-  const goManifesto = () => {
-    if (leaving) return;
-    setLeaving(true);
-    setTimeout(() => {
-      router.push("/manifesto");
-    }, 520);
-  };
-
   return (
     <main
       style={{
@@ -25,69 +9,55 @@ export default function Home() {
         alignItems: "center",
         justifyContent: "center",
         fontFamily: "Helvetica, Arial, sans-serif",
-        opacity: leaving ? 0 : 1,
-        transform: leaving ? "scale(0.99)" : "scale(1)",
-        transition: "opacity 520ms ease, transform 520ms ease",
+        padding: "40px 18px",
       }}
     >
-      <div
-        style={{
-          textAlign: "center",
-          maxWidth: "700px",
-          width: "100%",
-        }}
-      >
+      <div style={{ textAlign: "center", maxWidth: "720px", width: "100%" }}>
         {/* LOGO */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "72px",
-          }}
-        >
+        <div style={{ marginBottom: "26px" }}>
           <img
-            src="/logo-temp.png"
-            alt="Follow the White Rabbit logo"
+            src="/logo-tr-temp.png"
+            alt="Follow the White Rabbit Logo"
             style={{
-              width: "140px",
-              opacity: 0.95,
-              filter: "drop-shadow(0 0 20px rgba(180,0,255,0.4))",
+              width: "clamp(120px, 14vw, 190px)", // LOGO BOYUTU (küçük değil)
+              height: "auto",
+              display: "block",
+              margin: "0 auto",
+              // Mor ışığı KAPAT
+              filter: "none",
             }}
           />
         </div>
 
-        {/* SLOGAN */}
         <p
           style={{
-            letterSpacing: "0.32em",
+            letterSpacing: "0.3em",
             fontSize: "12px",
             opacity: 0.6,
-            marginBottom: "28px",
+            marginBottom: "24px",
           }}
         >
           BİR FISILTI, BİR ÇIĞLIK DEĞİL
         </p>
 
-        {/* TITLE */}
         <h1
           style={{
             fontSize: "56px",
             fontWeight: 300,
             lineHeight: 1.1,
-            marginBottom: "36px",
+            marginBottom: "32px",
           }}
         >
           follow the <br />
           <span style={{ fontWeight: 600 }}>white rabbit</span>
         </h1>
 
-        {/* SUBTEXT */}
         <p
           style={{
             fontSize: "18px",
             opacity: 0.8,
             lineHeight: 1.6,
-            marginBottom: "56px",
+            marginBottom: "48px",
           }}
         >
           Herkes anlamayacak.
@@ -95,23 +65,24 @@ export default function Home() {
           Zaten mesele bu.
         </p>
 
-        {/* BUTTON (ritüel geçiş) */}
-        <button
-          onClick={goManifesto}
+        <a
+          href="/manifesto"
           style={{
             backgroundColor: "transparent",
-            border: "1px solid rgba(255,255,255,0.35)",
+            border: "1px solid rgba(255,255,255,0.4)",
             color: "#ffffff",
-            padding: "16px 44px",
-            borderRadius: "48px",
+            padding: "14px 36px",
+            borderRadius: "40px",
             cursor: "pointer",
             fontSize: "14px",
-            letterSpacing: "0.18em",
+            letterSpacing: "0.15em",
+            display: "inline-block",
+            textDecoration: "none",
             userSelect: "none",
           }}
         >
           FOLLOW THE RABBIT
-        </button>
+        </a>
       </div>
     </main>
   );
