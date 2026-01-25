@@ -19,7 +19,7 @@ export default function Home() {
             src="/logo-tr-temp.png"
             alt="Follow the White Rabbit Logo"
             style={{
-              width: "clamp(260px, 50vw, 360px)", // LOGO BOYUTU (küçük değil)
+              width: "clamp(320px, 50vw, 180px)", // LOGO BOYUTU (küçük değil)
               height: "auto",
               display: "block",
               margin: "0 auto",
